@@ -1,0 +1,12 @@
+{% extends 'core/base.html' %}
+{% block content %}
+<h1>Portfolio</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque blanditiis dignissimos dolor ducimus est eum expliatum?</p>
+
+<ul>
+{% for project in projects%}
+    <li>{{ project.title }}</li>
+{% endfor %}
+</ul>
+
+{% endblock %}
